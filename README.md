@@ -1,7 +1,12 @@
-echo "# bdfd" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/RockeySensei/bdfd.git
-git push -u origin main
+# Sistema de bienvenida 
+Un sistema basico de bienvenida para BDFD. Con un total de 7 comandos y 5 variables.
+
+| VARIABLES | VALOR |
+|-----------|-------|
+| `message` |  **{member.mention} se unió al servidor `{guild.name}`, Y ahora somos  __{member.count}__ miembro.**     |
+| `welcome`    | 0    |
+| `embedbvn`   | no   |
+| `arole`    |    |
+| `auto`    | 0    |
+
+
