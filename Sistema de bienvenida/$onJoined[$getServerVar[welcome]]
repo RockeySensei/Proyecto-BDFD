@@ -1,0 +1,28 @@
+trigger $onJoined[$getServerVar[welcome]]
+
+
+$nomention
+$c[Mensaje de bienvenida]
+
+$if[$getServerVar[embedbvn]==no]
+$title[__Bienvenido $username__]
+$description[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[message];{member.name};$username;-1];{member.mention};<@$authorID>;-1];{member.count};$membersCount;-1];{member.tag};$discriminator[];-1];{Member.Full.Name};$username#$discriminator[];-1];{guild.name};$serverName[$guildID];-1];{guild.ID};$guildID;-1];{Owner.name};$username[$serverOwner];-1];{Owner.mention};<@$serverOwner>;-1];{Owner.ID};$serverOwner;-1];{guild.date};<t:$calculate[($guildID / 4194304 + 1420070400000) / 1000]:R>;-1];{member.date};<t:$calculate[($authorID / 4194304 + 1420070400000) / 1000]:R>;-1];{member.date.join};<t:$getTimestamp:R>;-1];{member.ID};$authorID;-1]]
+$image[$getServerVar[g]]
+$addTimestamp
+$color[fffff]
+$endif
+
+$if[$getServerVar[embedbvn]==yes]
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[message];{member.name};$username;-1];{member.mention};<@$authorID>;-1];{member.count};$membersCount;-1];{member.tag};$discriminator[];-1];{Member.Full.Name};$username#$discriminator[];-1];{guild.name};$serverName[$guildID];-1];{guild.ID};$guildID;-1];{Owner.name};$username[$serverOwner];-1];{Owner.mention};<@$serverOwne>;-1];{Owner.ID};$serverOwner;-1];{guild.date};<t:$calculate[($guildID / 4194304 + 1420070400000) / 1000]:R>;-1];{member.date};<t:$calculate[($authorID / 4194304 + 1420070400000) / 1000]:R>;-1];{member.date.join};<t:$getTimestamp:R>;-1];{member.ID};$authorID;-1]
+$color[fffff]
+$endif
+
+
+$c[Agregando el rol]
+
+$if[$getServerVar[auto]==yes]
+$roleGrant[$authorID;+$getServerVar[arole]]
+$suppressErrors[`❌`Error: intente colocar el rol "Tutoriales" en la parte superior de la jerarquía.]
+$endif
+
+

@@ -1,0 +1,16 @@
+trigger $onInteraction[ucrole]
+
+
+$nomention
+$if[$hasRole[$authorID;$findRole[$getServerVar[role3]]]==true]
+$takeRole[$authorID;$findRole[$getServerVar[role3]]]
+$ephemeral
+El rol <@&$findRole[$getServerVar[role3]]>ha sido removido!
+$endif
+$if[$hasRole[$authorID;$findRole[$getServerVar[role3]]]==false]
+$giveRole[$authorID;$findRole[$getServerVar[role3]]]
+$ephemeralEl rol <@&$findRole[$getServerVar[role3]]> ha sido añadido!
+$endif
+$removeButtons
+$onlyIf[$getServerVar[role3]!=;]
+$suppressErrors

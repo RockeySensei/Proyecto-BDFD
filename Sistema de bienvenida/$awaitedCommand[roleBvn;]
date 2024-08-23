@@ -1,0 +1,9 @@
+trigger $awaitedCommand[roleBvn;]
+
+
+$nomention
+$onlyIf[$roleExists[$message]==true;¡Este rol no existe!]
+$setServerVar[arole;$findRole[$message]]
+$setServerVar[auto;yes]
+$description[el rol <@&$findRole[$message]> ha sido configurado.]
+$color[fffff]
