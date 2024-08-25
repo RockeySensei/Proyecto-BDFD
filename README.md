@@ -8,5 +8,7 @@ Un sistema basico de bienvenida para BDFD. Con un total de 7 comandos y 5 variab
 | `embedbvn`   | no   |
 | `arole`    |    |
 | `auto`    | 0    |
+| `g`    |     |
+
 
 
