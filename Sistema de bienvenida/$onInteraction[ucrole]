@@ -1,3 +1,5 @@
+A este por favor pongalo en BDScript Unstable
+
 trigger $onInteraction[ucrole]
 
 
