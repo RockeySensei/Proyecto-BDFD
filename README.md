@@ -1,5 +1,5 @@
 # Sistema de bienvenida 
-Un sistema basico de bienvenida para BDFD. Con un total de 7 comandos y 5 variables.
+Un sistema basico de bienvenida para BDFD. Con un total de 6 comandos y 5 variables.
 
 | VARIABLES | VALOR |
 |-----------|-------|
